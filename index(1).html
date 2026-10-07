@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clara Weißenfels</title>
+<meta name="description" content="Clara Weißenfels, postdoctoral researcher in sociology at the University of Siegen: political sociology, poverty, political participation, quantitative methods.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=Instrument+Sans:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FBFCFD;--ink:#1B2430;--muted:#5B6675;--line:#DCE2E8;--accent:#0F6B6B;--soft:#EAF3F3;
+ --serif:'Source Serif 4',Georgia,serif;--sans:'Instrument Sans',system-ui,sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#11171F;--ink:#E6EBF1;--muted:#98A3B2;--line:#26303C;--accent:#6CC4C4;--soft:#1A2530}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:4.5rem}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.7 var(--serif)}
+a{color:var(--accent);text-underline-offset:3px}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.nav{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+.nav div{max-width:60rem;margin:0 auto;padding:.9rem 1.5rem;display:flex;gap:1.75rem;flex-wrap:wrap;font:600 .95rem var(--sans)}
+.nav a{color:var(--ink);text-decoration:none}
+.nav a:hover{color:var(--accent)}
+.nav .name{margin-right:auto}
+.page{max-width:60rem;margin:0 auto;padding:3rem 1.5rem 4rem;display:grid;grid-template-columns:15rem 1fr;gap:3.5rem}
+aside{font:500 .95rem/1.55 var(--sans);position:sticky;top:5.5rem;align-self:start}
+.photo{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:6px;background:var(--soft);margin-bottom:1.25rem;display:grid;place-items:center;font:600 3rem var(--sans);color:var(--accent)}
+aside h1{font:600 1.5rem/1.2 var(--sans);margin:0 0 .5rem}
+aside p{margin:0 0 1rem;color:var(--muted)}
+aside ul{list-style:none;margin:0;padding:0}
+aside li{margin:.25rem 0}
+h2{font:600 1.4rem/1.3 var(--sans);margin:2.75rem 0 1rem;padding-bottom:.4rem;border-bottom:1px solid var(--line)}
+h2:first-child{margin-top:0}
+main p{margin:0 0 1rem;max-width:40rem}
+.paper{margin:0 0 1.25rem;max-width:40rem}
+.paper .t{font-style:italic}
+.paper .s{color:var(--muted)}
+details{margin-top:.35rem}
+summary{cursor:pointer;color:var(--accent);font:500 .9rem var(--sans)}
+details p{margin:.5rem 0 0;padding-left:1rem;border-left:3px solid var(--soft);color:var(--muted);font-size:1rem}
+footer{max-width:60rem;margin:0 auto;padding:1.5rem;border-top:1px solid var(--line);color:var(--muted);font:400 .9rem var(--sans)}
+@media (max-width:760px){.page{grid-template-columns:1fr;gap:2rem}aside{position:static}.photo{max-width:12rem}}
+</style>
+</head>
+<body>
+<nav class="nav" aria-label="Main navigation"><div>
+  <a class="name" href="#top">Clara Weißenfels</a>
+  <a href="#about">About</a><a href="#research">Research</a><a href="#publications">Publications</a>
+</div></nav>
+
+<div class="page" id="top">
+  <aside>
+    <img class="photo" src="photo.jpg" alt="Portrait of Clara Weißenfels" onerror="this.outerHTML='<div class=&quot;photo&quot; role=&quot;img&quot; aria-label=&quot;Portrait placeholder&quot;>CW</div>'">
+    <h1>Clara Weißenfels</h1>
+    <p>Postdoctoral Researcher<br>Department of Social Science<br>University of Siegen</p>
+    <ul>
+      <li><a href="mailto:clara.weissenfels@uni-siegen.de">clara.weissenfels@uni-siegen.de</a></li>
+      <li><a href="https://orcid.org/0000-0003-2020-7888">ORCID</a></li>
+    </ul>
+  </aside>
+
+  <main>
+    <h2 id="about">About</h2>
+    <p>I am a sociologist and postdoctoral researcher at the Department of Social Science at the University of Siegen. My research focuses on power relations in societies: How do they arise, and how do they become stable? Do all citizens have an equal chance to engage politically and use that influence to change institutional frameworks? And what role do differing socioeconomic starting points play?</p>
+    <p>Methodologically, I work with quantitative methods and the analysis of panel data. I studied sociology and business economics (B.A.) and sociology (M.A.) at the University of Mannheim and was a visiting researcher at the Department of Social Policy and Intervention at the University of Oxford (10/2023–03/2024).</p>
+
+    <h2 id="research">Research</h2>
+    <p><strong>Research interests:</strong> Political sociology (poverty research, political participation) and quantitative methods.</p>
+
+    <h2 id="publications">Publications</h2>
+    <div id="pubs"><p class="s">Loading publications from ORCID …</p></div>
+    <p class="s">This list is loaded automatically from my <a href="https://orcid.org/0000-0003-2020-7888">ORCID record</a>.</p>
+
+    </main>
+</div>
+<footer>© <span id="y"></span> Clara Weißenfels · Hosted on GitHub Pages</footer>
+<script>
+document.getElementById('y').textContent=new Date().getFullYear();
+const ORCID='0000-0003-2020-7888', box=document.getElementById('pubs');
+const esc=t=>String(t).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const me=n=>/wei(ß|ss)enfels/i.test(n);
+const fmt=n=>me(n)?'<strong>'+esc(n)+'</strong>':esc(n);
+const initials=g=>(g||'').split(/[\s-]+/).filter(Boolean).map(p=>p[0]+'.').join(' ');
+
+// Autor:innen über Crossref (DOI) holen, sonst aus ORCID-Contributors
+async function authorsFor(w){
+  if(w.doi){
+    try{
+      const r=await fetch('https://api.crossref.org/works/'+encodeURIComponent(w.doi));
+      if(r.ok){
+        const a=(await r.json()).message.author||[];
+        if(a.length) return a.map(x=>x.family?x.family+(x.given?', '+initials(x.given):''):(x.name||'')).filter(Boolean);
+      }
+    }catch(e){}
+  }
+  try{
+    const r=await fetch(`https://pub.orcid.org/v3.0/${ORCID}/work/${w.put}`,{headers:{Accept:'application/json'}});
+    if(r.ok){
+      const c=((await r.json()).contributors||{}).contributor||[];
+      return c.map(x=>x['credit-name']&&x['credit-name'].value).filter(Boolean);
+    }
+  }catch(e){}
+  return [];
+}
+
+fetch(`https://pub.orcid.org/v3.0/${ORCID}/works`,{headers:{Accept:'application/json'}})
+ .then(r=>r.ok?r.json():Promise.reject())
+ .then(d=>{
+  const works=(d.group||[]).map(g=>g['work-summary'][0]).map(w=>{
+    const ids=(w['external-ids']||{})['external-id']||[];
+    const doi=ids.find(i=>i['external-id-type']==='doi');
+    return {put:w['put-code'],title:w.title.title.value,journal:w['journal-title']&&w['journal-title'].value,
+      year:w['publication-date']&&w['publication-date'].year?w['publication-date'].year.value:'',
+      doi:doi?doi['external-id-value']:'',url:w.url&&w.url.value};
+  }).sort((a,b)=>(b.year||0)-(a.year||0));
+  if(!works.length){box.innerHTML='<p class="s">No publications found in ORCID yet.</p>';return}
+  box.innerHTML=works.map((w,i)=>{
+    const link=w.doi?`https://doi.org/${w.doi}`:w.url;
+    return `<div class="paper"><span id="au${i}"></span>(${esc(w.year)}). <span class="t">${esc(w.title)}.</span> ${w.journal?'<em>'+esc(w.journal)+'</em>. ':''}${link?`<a href="${esc(link)}">[Link]</a>`:''}</div>`;
+  }).join('');
+  works.forEach((w,i)=>authorsFor(w).then(a=>{
+    if(a.length) document.getElementById('au'+i).innerHTML=a.map(fmt).join(', ')+' ';
+  }));
+ })
+ .catch(()=>{box.innerHTML='<p class="s">Publications could not be loaded. See <a href="https://orcid.org/0000-0003-2020-7888">ORCID</a>.</p>'});
+</script>
+</body>
+</html>
